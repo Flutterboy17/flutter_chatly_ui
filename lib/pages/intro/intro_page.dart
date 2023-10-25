@@ -97,6 +97,12 @@ class _IntroPageState extends State<IntroPage> {
                 }),
               ),
               MaterialButton(
+                minWidth: 120,
+                height: 50,
+                highlightColor: AppColors.transparentColor,
+                highlightElevation: 0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(6)),
                 color: AppColors.accentColor,
                 onPressed: () {
                   if (_currentPage == _introPages.length - 1) {
